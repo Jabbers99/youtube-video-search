@@ -1,7 +1,7 @@
 {
-	"name": "Youtube video search",
+	"name": "Youtube Video Search",
 	"version": "1.0",
-	"description": "Searches youtube for videos instead of google, if the user presses videos",
+	"description": "Redirects the default googl videos tab to search youtube, instead of the default google videos search.",
 	"manifest_version": 2,
 	"permissions": [
 		"storage"
