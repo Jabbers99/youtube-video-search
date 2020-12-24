@@ -1,0 +1,24 @@
+{
+	"name": "Youtube video search",
+	"version": "1.0",
+	"description": "Searches youtube for videos instead of google, if the user presses videos",
+	"manifest_version": 2,
+	"permissions": [
+		"storage"
+	],
+	"content_scripts": [
+		{
+			"matches": ["https://www.google.com/search*"],
+			"js": ["jquery-3.5.1.min.js", "youtubevideosearch.js"]
+		}
+	],
+	"icons": {
+		"16": "icon16.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
+	},
+	"browser_action": {
+		"default_icon": "icon48.png",
+		"default_popup": "popup.html"
+	}
+}
