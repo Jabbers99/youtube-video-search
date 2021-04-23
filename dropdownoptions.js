@@ -1,4 +1,3 @@
-console.log("testing123");
 chrome.storage.sync.get({'enable_youtube_video_search' : true}, function(result) {
 	var checked = result.enable_youtube_video_search;
 	if (checked == true) {
@@ -10,11 +9,9 @@ chrome.storage.sync.get({'enable_youtube_video_search' : true}, function(result)
 
 $('#enable_youtube_video_search').checkbox({
     onChecked: function() {
-    	console.log("checked");
 		chrome.storage.sync.set({"enable_youtube_video_search": true}, function() {});
     },
     onUnchecked: function() {
-		console.log("unchecked");
 		chrome.storage.sync.set({"enable_youtube_video_search": false}, function() {});
     }
 });
