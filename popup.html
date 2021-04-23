@@ -3,14 +3,14 @@
 <head>
 	<script src="jquery-3.5.1.min.js"></script>
 	<script src="checkbox.min.js"></script>
-	<script src="dropdownoptions.js"></script>
 	<link rel="stylesheet" href="checkbox.min.css">
 </head>
 	<body style="width:400px;height:30px;">
-	<div class="ui toggle checkbox" id="enable_youtube_video_search">
-		<input type="checkbox" name="enable-video-search" checked>
-		<label>Enable Youtube Video Search Redirect</label>
-	</div>
-
+		<div class="ui toggle checkbox" id="enable_youtube_video_search">
+			<input type="checkbox" name="enable-video-search">
+			<label>Enable Youtube Video Search Redirect</label>
+		</div>
 	</body>
+	<!-- load after html is defined -->
+	<script src="dropdownoptions.js"></script>
 </html>
